@@ -98,6 +98,13 @@
 
 body { background: #eadadd; color: #2c2c2c; font-family: 'Noto Sans Devanagari', sans-serif; }
 html { scroll-behavior: smooth; }
+/* Contain off-screen entrance transforms without creating a nested scroll container. */
+html, body { overflow-x: clip; }
+@media (max-width: 1023px) {
+  /* Let grid content and long headings fit the available mobile width. */
+  section .grid > * { min-width: 0; }
+  section h1, section h2, section h3 { overflow-wrap: anywhere; }
+}
 button, a { -webkit-tap-highlight-color: transparent; }
 button { cursor: pointer; }
 :focus-visible { outline: 3px solid #b0ba35; outline-offset: 5px; }

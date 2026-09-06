@@ -12,12 +12,13 @@ export function Sidebar() {
 <aside
         className="hidden lg:flex fixed left-0 top-0 h-screen w-64 bg-[#2c2c2c] z-50 flex-col justify-between pt-6 pb-8 px-8"
       >
+        <p className="shrink-0 mb-3 text-xs text-white/70">Beta Version: 0.7</p>
         {/* Logo */}
         <a
           href="#home"
           aria-label="Fearless Comedy Film Festival — back to top"
           onClick={(event) => { event.preventDefault(); activate('Home', event.currentTarget); }}
-          className="-mt-2 shrink-0 rounded-lg focus-visible:outline-2 focus-visible:outline-[#b0ba35]"
+          className="shrink-0 rounded-lg focus-visible:outline-2 focus-visible:outline-[#b0ba35]"
         >
           <img
             src={logoWhite}
