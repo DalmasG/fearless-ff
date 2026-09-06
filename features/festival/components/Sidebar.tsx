@@ -12,7 +12,10 @@ export function Sidebar() {
 <aside
         className="hidden lg:flex fixed left-0 top-0 h-screen w-64 bg-[#2c2c2c] z-50 flex-col justify-between pt-6 pb-8 px-8"
       >
-        <p className="shrink-0 mb-3 text-xs text-white/70">Beta Version: 0.7</p>
+        <div className="shrink-0 mb-3 text-xs leading-relaxed text-white/70">
+          <p>Beta Version: 0.7</p>
+          <p>Developer - Sam Ray Perez</p>
+        </div>
         {/* Logo */}
         <a
           href="#home"
