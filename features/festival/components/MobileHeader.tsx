@@ -14,8 +14,11 @@ export function MobileHeader() {
           isScrolled ? 'bg-[#2c2c2c] shadow-lg' : 'bg-[#2c2c2c]/90 backdrop-blur-sm'
         }`}
       >
-        <p className="absolute top-1 left-6 text-[10px] leading-none text-white/70">Beta Version: 0.7</p>
-        <div className="px-6 py-4">
+        <div className="absolute top-1 left-6 text-[10px] leading-tight text-white/70">
+          <p>Beta Version: 0.7</p>
+          <p>Developer - Sam Ray Perez</p>
+        </div>
+        <div className="px-6 pt-8 pb-3">
           <div className="flex items-center justify-between">
             <a
               href="#home"
